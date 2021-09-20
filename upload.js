@@ -288,18 +288,6 @@ browserOpenPromise
     let postIt = waitAndType(".createPostContent", post[0], currentBrowserPage);
     return postIt;
   })
-  // .then(function () {
-  //   let uploadIt = waitAndClick(
-  //     "span> .MuiIconButton-label",
-  //     currentBrowserPage
-  //   );
-  //   return uploadIt;
-  //   }).then(function(){
-  //     const elementHandle = currentBrowserPage.$("input[type=file]");
-  //      elementHandle.uploadFile('E:\\pepcoding\\random\\dog_meme.jpg');
-  //     //  currentBrowserPage.click('div>.MuiButton-contained.post_button');  // might not be necessary
-  //     return elementHandle;
-  // })
   .then(function () {
     let inputUploadHandle = currentBrowserPage.$("input[type='file']");
     return inputUploadHandle;
